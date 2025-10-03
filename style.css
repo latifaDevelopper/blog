@@ -276,4 +276,59 @@ textarea { height: 100px; resize: none; }
   color: #0077ff;
   text-decoration: none;
 }
+.blog {
+  padding: 6rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.blog h2 {
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* bigger min width */
+  gap: 2.5rem;
+  max-width: 1200px; /* wider section */
+  margin: auto;
+}
+
+.blog-card {
+  background: #fdfdfd;
+  padding: 2.5rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+  min-height: 260px; /* ensures cards look tall */
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.15);
+}
+
+.blog-card h3 {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;  /* bigger titles */
+  color: #0077ff;
+}
+
+.blog-card p {
+  color: #444;
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.blog-card a {
+  font-weight: bold;
+  color: #0077ff;
+  text-decoration: none;
+  font-size: 1rem;
+}
 
