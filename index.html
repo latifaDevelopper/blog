@@ -128,6 +128,32 @@ const showOnScroll = new IntersectionObserver(entries => {
   });
 });
 observers.forEach(el => showOnScroll.observe(el));
+// Typing effect for Hero text
+const typedText = ["Explore the future of coding 🚀", "AI, Design & Innovation 🤖", "Learn, Build, Create 🎨"];
+let i = 0, j = 0, currentText = "", isDeleting = false;
+
+function typeEffect() {
+  currentText = typedText[i];
+  let display = document.getElementById("typed");
+
+  if (isDeleting) {
+    display.textContent = currentText.substring(0, j--);
+  } else {
+    display.textContent = currentText.substring(0, j++);
+  }
+
+  if (!isDeleting && j === currentText.length) {
+    isDeleting = true;
+    setTimeout(typeEffect, 1500);
+    return;
+  } else if (isDeleting && j === 0) {
+    isDeleting = false;
+    i = (i + 1) % typedText.length;
+  }
+
+  setTimeout(typeEffect, isDeleting ? 50 : 100);
+}
+typeEffect();
 
   </script>
 </body>
