@@ -111,3 +111,82 @@ footer .social a:hover { color: #ff00ff; }
   .menu-toggle { display: block; }
   .team { flex-direction: column; }
 }
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex; justify-content: center; align-items: center;
+  text-align: center; padding: 2rem;
+  background: linear-gradient(-45deg, #111, #1a1a2e, #16213e, #0f3460);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+  color: #fff;
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 15px #0ff, 0 0 25px #ff00ff;
+}
+.highlight { color: #0ff; }
+#typed {
+  font-size: 1.3rem;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+  min-height: 24px;
+}
+
+/* Neon Button */
+.neon-btn {
+  background: none;
+  border: 2px solid #0ff;
+  color: #0ff;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.neon-btn:hover {
+  background: #0ff;
+  color: #111;
+  box-shadow: 0 0 20px #0ff, 0 0 40px #ff00ff;
+}
+
+/* Contact */
+.contact-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+.input-group {
+  display: flex; align-items: center;
+  background: rgba(255,255,255,0.08);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+.input-group i {
+  margin-right: 10px;
+  color: #0ff;
+}
+.input-group input,
+.input-group textarea {
+  border: none;
+  background: transparent;
+  outline: none;
+  color: #fff;
+  width: 100%;
+  font-size: 1rem;
+}
+textarea { height: 100px; resize: none; }
+
