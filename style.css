@@ -367,3 +367,67 @@ footer .social a:hover { color: #ff00ff; }
   .menu-toggle { display: block; }
   .team { flex-direction: column; }
 }
+/* General Button Styles */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: #ff4d5a;
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover {
+  background: #ff1f3a;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(255, 0, 50, 0.3);
+}
+
+/* Animated Hero Button */
+.btn-animated::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.4s ease;
+}
+
+.btn-animated:hover::after {
+  width: 100%;
+}
+
+/* Contact Form */
+#contact form {
+  max-width: 500px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#contact input, #contact textarea {
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+#contact input:focus, #contact textarea:focus {
+  border-color: #ff4d5a;
+  box-shadow: 0 0 10px rgba(255, 77, 90, 0.3);
+  outline: none;
+}
+
+#contact button.btn {
+  align-self: center;
+  padding: 0.75rem 2.5rem;
+}
+
