@@ -439,7 +439,7 @@ footer .social a:hover { color: #ff00ff; }
 
 /* Move Start Reading button slightly down */
 .hero-content .btn {
-  margin-top: 125px; /* increases space below the paragraph */
+  margin-top: 105px; /* increases space below the paragraph */
 }
 
 
